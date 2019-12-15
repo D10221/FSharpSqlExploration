@@ -1,0 +1,2 @@
+#!/usr/bin/env sh
+dotnet build && mono bin/Debug/netcoreapp3.0/MonoDataDapper.dll
