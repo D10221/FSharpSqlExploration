@@ -11,6 +11,7 @@
     </Compile>
     <Compile Include="src/Connections.fs" />
     <Compile Include="src/Commands.fs" />
+    <Compile Include="src/CommandsAsync.fs"/>
     <Compile Include="src/Kv.fs" />
     <Compile Include="src/Main.fs" />
     <Compile Include="src/Program.fs" />

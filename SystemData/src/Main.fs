@@ -1,11 +1,10 @@
 module Main
 
-open System
-open System.Data
 open System.Data.SQLite
 open Connections
 open Kv
 open System.Data.Common
+open CommandsAsync
 
 [<Literal>]
 let ConnectionString = "Data Source=sqlite.db"
@@ -17,7 +16,6 @@ let Run() =
     try // can't connect
         let con = connect() |> Connection
         use __ = con |> Disposable // \(0.o)/
-
         let tran =
             con
             |> Open
@@ -57,7 +55,11 @@ let Run() =
             tran
             |> delete "hello"
             |> printf "delete: %A\n"
-
+            // ...
+            (QueryAsync (sprintf "select '%s' as Key, '%s' as Value" "hello" "async world") None tran) 
+            |> Async.RunSynchronously
+            |> printf "QueryAsync: %A\n"
+            // ...
             printf "%s\n" "Commit"
             commit tran
             printf "%s\n" "Success"

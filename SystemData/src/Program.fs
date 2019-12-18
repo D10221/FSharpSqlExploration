@@ -1,5 +1,4 @@
-﻿open System
-open Main
+﻿open Main
 
 [<EntryPoint>]
 let main argv =
