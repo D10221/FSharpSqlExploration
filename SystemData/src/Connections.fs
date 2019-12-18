@@ -63,7 +63,7 @@ let rec dispose x =
 let beginTransaction (con: Connectable) =
     match con with
     | Connection con ->
-        printf "Begin Transaction ..."
+        printf "Begin Transaction ...\n"
         con.BeginTransaction() |> Transaction
     | Transaction tran -> failwithf "Not Implemented beginTransaction of %A" tran
 
