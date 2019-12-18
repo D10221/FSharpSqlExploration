@@ -5,6 +5,8 @@
     <TargetFramework>netcoreapp3.0</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="src/MyDapper.fs"/>
+    <Compile Include="src/Kvs.fs"/>
     <Compile Include="src/Program.fs" />
   </ItemGroup>
   <Import Project="..\.paket\Paket.Restore.targets" />

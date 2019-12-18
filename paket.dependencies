@@ -6,3 +6,4 @@ nuget Dapper
 nuget Mono.Data.SQlite
 nuget SQlProvider
 nuget System.Data.SQLite
+github rspeele/TaskBuilder.fs TaskBuilder.fs

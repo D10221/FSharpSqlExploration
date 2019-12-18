@@ -5,6 +5,13 @@
     <TargetFramework>netcoreapp3.0</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="..\paket-files\rspeele\TaskBuilder.fs\TaskBuilder.fs">
+      <Paket>True</Paket>
+      <Link>paket-files/TaskBuilder.fs</Link>
+    </Compile>
+    <Compile Include="Connections.fs" />
+    <Compile Include="Commands.fs" />
+    <Compile Include="Kv.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
   <Import Project="..\.paket\Paket.Restore.targets" />

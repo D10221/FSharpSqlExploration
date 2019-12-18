@@ -151,3 +151,6 @@ NUGET
       Microsoft.NETCore.Platforms (>= 1.1)
       Microsoft.NETCore.Targets (>= 1.1)
       System.Runtime (>= 4.3)
+GITHUB
+  remote: rspeele/TaskBuilder.fs
+    TaskBuilder.fs (9c584076ade5ed285d34ba91db81b0a46e4998d6)
