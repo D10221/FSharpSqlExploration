@@ -9,10 +9,11 @@
       <Paket>True</Paket>
       <Link>paket-files/TaskBuilder.fs</Link>
     </Compile>
-    <Compile Include="Connections.fs" />
-    <Compile Include="Commands.fs" />
-    <Compile Include="Kv.fs" />
-    <Compile Include="Program.fs" />
+    <Compile Include="src/Connections.fs" />
+    <Compile Include="src/Commands.fs" />
+    <Compile Include="src/Kv.fs" />
+    <Compile Include="src/Main.fs" />
+    <Compile Include="src/Program.fs" />
   </ItemGroup>
   <Import Project="..\.paket\Paket.Restore.targets" />
 </Project>
